@@ -3227,7 +3227,7 @@
                 </div>
               </div>
             </section>
-            <div
+            <!-- <div
               style="
                 background: #141210;
                 color: #f3f0ea;
@@ -3263,7 +3263,52 @@
                 </sc-for>
               </div>
             </div>
-          </sc-if>
+          </sc-if> -->
+          </section>
+
+          <section style="background:#fbfaf8;color:#141210;padding:clamp(80px,10vw,140px) clamp(20px,4vw,56px)">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(32px,6vw,80px);align-items:start">
+
+              <div>
+                <div data-reveal="up" style="display:flex;align-items:center;gap:10px;font-size:var(--text-body-sm);font-weight:700;margin-bottom:24px">
+                  <span style="width:8px;height:8px;border-radius:999px;background:#ff4d1f;display:block"></span>
+                  Visit Us
+                </div>
+
+                <h2 data-reveal="up" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(3rem,8vw,7rem);line-height:0.88">Find Our Studio in Ahmedabad</h2>
+              </div>
+
+              <div data-reveal="up" style="display:flex;flex-direction:column;align-items:flex-start;gap:20px">
+                <span style="font-family:var(--font-mono);font-size:12px;color:#8a857b">Office Address</span>
+
+                <p style="margin:0;font-size:var(--text-body-lg);line-height:1.8;color:#4a463f">
+                  612, J. B. Tower,<br>
+                  Drive In Road,<br>
+                  Near Doordarshan Kendra / S.A.L. Hospital,<br>
+                  Thaltej, Ahmedabad,<br>
+                  Gujarat 380054, India
+                </p>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&amp;query=612%2C%20J.%20B.%20Tower%2C%20Drive%20In%20Road%2C%20Near%20Doordarshan%20Kendra%20%2F%20S.A.L.%20Hospital%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:999px;background:#ff4d1f;color:#141210;font-size:var(--text-body-sm);font-weight:700;text-decoration:none"
+                  style-hover="background:#141210;color:#f3f0ea"
+                >View Studio Location on Google Maps ↗</a>
+              </div>
+
+            </div>
+          </section>
+
+          <div style="background:#141210;color:#f3f0ea;padding:20px 0;overflow:hidden">
+            <div data-marquee="1" data-speed="0.8" style="display:flex;width:max-content">
+              <sc-for list="{{ marqueeServices }}" as="m" hint-placeholder-count="6">
+                <span style="display:flex;align-items:center;gap:28px;padding-right:28px;font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(1.5rem,3vw,2.25rem);white-space:nowrap">{{ m }}<span style="color:#dcff4f">✶</span></span>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
 
           <!-- ================= BLOG ================= -->
           <sc-if value="{{ isBlog }}" hint-placeholder-val="{{ false }}">
@@ -3377,7 +3422,7 @@
                   gap: clamp(40px, 6vw, 96px);
                 "
               >
-                <div style="display: flex; flex-direction: column; gap: 28px">
+                <!-- <div style="display: flex; flex-direction: column; gap: 28px">
                   <div
                     data-reveal="up"
                     style="
@@ -3444,6 +3489,35 @@
                       "
                       >sales@briefffly.com</a
                     >
+                  </div>
+                </div> -->
+                <div style="display:flex;flex-direction:column;gap:28px">
+                  <div data-reveal="up" style="display:flex;align-items:center;gap:10px;font-size:var(--text-body-sm);font-weight:700"><span style="width:8px;height:8px;border-radius:999px;background:#ff4d1f;display:block"></span>Contact Information</div>
+
+                  <h2 data-reveal="up" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(3rem,6vw,5.5rem);line-height:0.88">Get In Touch With Our Team</h2>
+
+                  <div data-reveal="up" style="background:#141210;color:#f3f0ea;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:8px">
+                    <span style="font-family:var(--font-mono);font-size:12px;color:#8a857b">Email Address</span>
+                    <a href="mailto:sales@briefffly.com" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3rem);color:#dcff4f">sales@briefffly.com</a>
+                  </div>
+
+                  <div data-reveal="up" style="background:#141210;color:#f3f0ea;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px">
+                    <span style="font-family:var(--font-mono);font-size:12px;color:#8a857b">Office Address</span>
+
+                    <p style="margin:0;font-size:var(--text-body-lg);line-height:1.8;color:#ece9e2">
+                      612, J. B. Tower,<br>
+                      Drive In Road,<br>
+                      Near Doordarshan Kendra / S.A.L. Hospital,<br>
+                      Thaltej, Ahmedabad,<br>
+                      Gujarat 380054, India
+                    </p>
+
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=612%2C%20J.%20B.%20Tower%2C%20Drive%20In%20Road%2C%20Near%20Doordarshan%20Kendra%20%2F%20S.A.L.%20Hospital%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="align-self:flex-start;font-size:var(--text-body-sm);font-weight:700;color:#ff4d1f;text-decoration:none"
+                    >Visit Us on Google Maps ↗</a>
                   </div>
                 </div>
                 <div
@@ -3784,7 +3858,7 @@
                   ></sc-for
                 >
               </div>
-              <div style="display: flex; flex-direction: column; gap: 10px">
+              <!-- <div style="display: flex; flex-direction: column; gap: 10px">
                 <span
                   style="
                     font-family: var(--font-mono);
@@ -3800,6 +3874,29 @@
                   style-hover="color:#ff4d1f"
                   >sales@briefffly.com</a
                 >
+              </div> -->
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <span style="font-family:var(--font-mono);font-size:12px;color:#8a857b;margin-bottom:6px">Contact Us</span>
+
+                <a href="mailto:sales@briefffly.com" style="font-size:var(--text-body-sm);color:#ece9e2" style-hover="color:#ff4d1f">sales@briefffly.com</a>
+
+                <span style="font-family:var(--font-mono);font-size:12px;color:#8a857b;margin-top:12px">Office Address</span>
+
+                <p style="margin:0;font-size:var(--text-body-sm);line-height:1.7;color:#d8d4cc">
+                  612, J. B. Tower,<br>
+                  Drive In Road,<br>
+                  Near Doordarshan Kendra / S.A.L. Hospital,<br>
+                  Thaltej, Ahmedabad,<br>
+                  Gujarat 380054, India
+                </p>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&amp;query=612%2C%20J.%20B.%20Tower%2C%20Drive%20In%20Road%2C%20Near%20Doordarshan%20Kendra%20%2F%20S.A.L.%20Hospital%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="font-size:var(--text-body-sm);font-weight:600;color:#ff4d1f;text-decoration:none"
+                  style-hover="color:#dcff4f"
+                >View on Google Maps ↗</a>
               </div>
               <div style="display: flex; flex-direction: column; gap: 10px">
                 <span
