@@ -2026,7 +2026,7 @@
                 </sc-for>
               </div>
             </section>
-            <div
+            <!-- <div
               style="
                 border-top: 1px solid var(--border-default);
                 border-bottom: 1px solid var(--border-default);
@@ -2066,7 +2066,47 @@
                   ></span>
                 </sc-for>
               </div>
+            </div> -->
+
+            <section style="max-width:1360px;margin:0 auto;padding:clamp(64px,8vw,112px) clamp(20px,5vw,64px)">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(32px,6vw,80px);align-items:start">
+
+                <div>
+                  <div data-reveal="up" style="font-size:var(--text-eyebrow);letter-spacing:0.14em;text-transform:uppercase;color:var(--text-tertiary);margin-bottom:20px">Visit Us</div>
+
+                  <h2 data-reveal="up" style="margin:0;font-family:var(--font-display);font-weight:400;font-size:var(--text-display-2);line-height:1.08;letter-spacing:-0.02em">Find Our Studio in Ahmedabad</h2>
+                </div>
+
+                <div data-reveal="up" style="display:flex;flex-direction:column;align-items:flex-start;gap:20px">
+                  <div style="font-size:var(--text-eyebrow);letter-spacing:0.14em;text-transform:uppercase;color:var(--text-tertiary)">Office Address</div>
+
+                  <p style="margin:0;font-size:var(--text-body-lg);line-height:1.8;color:var(--text-secondary)">
+                    612, J. B. Tower,<br>
+                    Drive In Road,<br>
+                    Near Doordarshan Kendra / S.A.L. Hospital,<br>
+                    Thaltej, Ahmedabad,<br>
+                    Gujarat 380054, India
+                  </p>
+
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&amp;query=612%2C%20J.%20B.%20Tower%2C%20Drive%20In%20Road%2C%20Near%20Doordarshan%20Kendra%20%2F%20S.A.L.%20Hospital%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="display:inline-flex;align-items:center;gap:8px;font-size:var(--text-body-sm);font-weight:600;color:var(--accent-hover);text-decoration:none;border-bottom:1px solid var(--accent-hover);padding-bottom:6px"
+                  >View Studio Location on Google Maps ↗</a>
+                </div>
+
+              </div>
+            </section>
+
+            <div style="border-top:1px solid var(--border-default);border-bottom:1px solid var(--border-default);padding:24px 0;overflow:hidden">
+              <div data-marquee="1" data-speed="0.7" style="display:flex;width:max-content">
+                <sc-for list="{{ marqueeServices }}" as="m" hint-placeholder-count="6">
+                  <span style="display:flex;align-items:center;gap:32px;padding-right:32px;font-size:clamp(1.25rem,2.4vw,1.75rem);font-weight:500;white-space:nowrap">{{ m }}<span style="width:8px;height:8px;border-radius:999px;background:var(--accent);display:block"></span></span>
+                </sc-for>
+              </div>
             </div>
+
           </sc-if>
 
           <!-- ================= BLOG ================= -->
@@ -2257,7 +2297,7 @@
                 padding: 0 clamp(20px, 5vw, 64px) clamp(80px, 11vw, 160px);
               "
             >
-              <div
+              <!-- <div
                 style="
                   display: grid;
                   grid-template-columns: repeat(
@@ -2330,7 +2370,40 @@
                       "
                     />
                   </div>
-                </div>
+                </div> -->
+                <div style="display:flex;flex-direction:column;gap:32px">
+                  <h2 data-reveal="up" style="margin:0;font-family:var(--font-display);font-weight:400;font-size:var(--text-display-2);line-height:1.08;letter-spacing:-0.02em">Get In Touch With Our Team</h2>
+
+                  <div data-reveal="up" style="display:flex;flex-direction:column;gap:8px">
+                    <span style="font-size:var(--text-eyebrow);letter-spacing:0.14em;text-transform:uppercase;color:var(--text-tertiary)">Email Address</span>
+                    <a href="mailto:sales@briefffly.com" style="font-family:var(--font-display);font-size:var(--text-h1);letter-spacing:-0.02em">sales@briefffly.com</a>
+                  </div>
+
+                  <div data-reveal="up" style="display:flex;flex-direction:column;gap:12px">
+                    <span style="font-size:var(--text-eyebrow);letter-spacing:0.14em;text-transform:uppercase;color:var(--text-tertiary)">Office Address</span>
+
+                    <p style="margin:0;font-size:var(--text-body-lg);line-height:1.7;color:var(--text-secondary)">
+                      612, J. B. Tower,<br>
+                      Drive In Road,<br>
+                      Near Doordarshan Kendra / S.A.L. Hospital,<br>
+                      Thaltej, Ahmedabad,<br>
+                      Gujarat 380054, India
+                    </p>
+
+                    <div>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&amp;query=612%2C%20J.%20B.%20Tower%2C%20Drive%20In%20Road%2C%20Near%20Doordarshan%20Kendra%20%2F%20S.A.L.%20Hospital%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="font-size:var(--text-body-lg);font-weight:600;color:var(--accent-hover);text-decoration:none"
+                      >Visit Us on Google Maps ↗</a>
+                    </div>
+                  </div>
+
+                  <div data-reveal="img" style="position:relative;overflow:hidden;border-radius:8px;aspect-ratio:4/3;background:var(--ink-05)">
+                    <img data-parallax="0.1" src="https://briefffly.studio/assets/images/our-studio/our-studio-banner.png" alt="Briefffly studio" style="position:absolute;left:0;top:-10%;width:100%;height:120%;object-fit:cover">
+                  </div>
+                </div>                
                 <div
                   data-reveal="up"
                   style="display: flex; flex-direction: column; gap: 20px"
@@ -2623,7 +2696,7 @@
                   >
                 </sc-for>
               </div>
-              <div style="display: flex; flex-direction: column; gap: 10px">
+              <!-- <div style="display: flex; flex-direction: column; gap: 10px">
                 <span
                   style="
                     font-size: var(--text-eyebrow);
@@ -2640,6 +2713,28 @@
                   style-hover="color:var(--accent-light)"
                   >sales@briefffly.com</a
                 >
+              </div> -->
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <span style="font-size:var(--text-eyebrow);letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-45);margin-bottom:6px">Contact Us</span>
+
+                <a href="mailto:sales@briefffly.com" style="color:var(--ink-10);font-size:var(--text-body-sm)" style-hover="color:var(--accent-light)">sales@briefffly.com</a>
+
+                <span style="font-size:var(--text-eyebrow);letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-45);margin-top:12px">Office Address</span>
+
+                <p style="margin:0;color:var(--ink-20);font-size:var(--text-body-sm);line-height:1.7">
+                  612, J. B. Tower,<br>
+                  Drive In Road,<br>
+                  Near Doordarshan Kendra / S.A.L. Hospital,<br>
+                  Thaltej, Ahmedabad,<br>
+                  Gujarat 380054, India
+                </p>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&amp;query=612%2C%20J.%20B.%20Tower%2C%20Drive%20In%20Road%2C%20Near%20Doordarshan%20Kendra%20%2F%20S.A.L.%20Hospital%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color:var(--accent-light);font-size:var(--text-body-sm);font-weight:600;text-decoration:none"
+                >View on Google Maps ↗</a>
               </div>
               <div style="display: flex; flex-direction: column; gap: 10px">
                 <span
@@ -2985,7 +3080,7 @@
 
             formSent: this.state.sent, 
             formOpen: !this.state.sent, 
-            sendForm: async () => {
+            <!-- sendForm: async () => {
               const response = await fetch('http://127.0.0.1:8000/contact', {
                 method: 'POST',
                 headers: {
@@ -3002,6 +3097,51 @@
               const data = await response.json();
 
               if(data.success){
+                this.setState({ sent: true });
+              }
+            } -->
+
+            sendForm: async () => {
+              const response = await fetch("http://127.0.0.1:8000/send-email", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                  name: this.state.name,
+                  email: this.state.email,
+                  subject: this.state.subject,
+                  message: this.state.message
+                })
+              });
+
+              const result = await response.json();
+
+
+              console.log("Contact email response:", result);
+              console.log("First email request completed");
+              
+              // Send automatic thank you email to the user
+              const autoReplyResponse = await fetch("http://127.0.0.1:8000/send-auto-reply", {
+                method: "POST",
+                headers: {
+                  "Content-Type" : "application/json"
+                },
+                body: JSON.stringify({
+                  name: this.state.name,
+                  email: this.state.email,
+                  subject: this.state.subject,
+                  message: this.state.message
+                })
+              });
+
+              const autoReplyResult = await autoReplyResponse.json();
+
+              console.log("Auto-reply response:", autoReplyResult);
+              console.log("Second email request completed");
+
+              // Show success message only when both emails succeed
+              if (result.success && autoReplyResult.success) {
                 this.setState({ sent: true });
               }
             }
