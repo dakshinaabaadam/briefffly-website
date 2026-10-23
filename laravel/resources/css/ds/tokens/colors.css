@@ -1,0 +1,12 @@
+:root{
+--white:#ffffff;--paper:#fbfaf8;--ink:#1c1a17;--ink-70:#4a463f;--ink-45:#8a857b;--ink-20:#d8d4cc;--ink-10:#ece9e2;--ink-05:#f5f3ee;
+--success:#2f6b4f;--success-tint:#e7f0ea;--danger:#a3372e;--danger-tint:#f6e9e7;--info:#375a8c;--info-tint:#e9eff6;
+--surface-page:var(--paper);--surface-card:var(--white);--surface-sunken:var(--ink-05);--surface-inverse:var(--ink);
+--text-primary:var(--ink);--text-secondary:var(--ink-70);--text-tertiary:var(--ink-45);--text-on-accent:var(--white);--text-on-inverse:var(--ink-05);
+--border-default:var(--ink-20);--border-subtle:var(--ink-10);--border-strong:var(--ink-70);
+--accent-hue:70;/* @kind other */--accent-chroma:0.13;/* @kind other */--accent-lightness:0.58;/* @kind other */
+--accent:oklch(var(--accent-lightness) var(--accent-chroma) var(--accent-hue));
+--accent-hover:oklch(calc(var(--accent-lightness) - 0.14) var(--accent-chroma) var(--accent-hue));
+--accent-light:oklch(calc(var(--accent-lightness) + 0.28) calc(var(--accent-chroma) * 0.55) var(--accent-hue));
+--accent-tint:oklch(0.96 calc(var(--accent-chroma) * 0.35) var(--accent-hue))
+}

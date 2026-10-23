@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  background: #fbfaf8;
+  color: #1c1a17;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+::selection {
+  background: var(--accent-light);
+}
